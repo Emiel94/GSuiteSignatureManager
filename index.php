@@ -17,14 +17,14 @@ $mooSig = new mooSignature($domain, $admin_email);
 // Setting test and preview mode so no changes are written
 // For pushing to live: set addSettingRunTestMode to False
 $mooSig->addSettingRunTestMode(True);
-$mooSig->addSettingPreviewSignature(True);
+$mooSig->addSettingPreviewSignature(True); // Set to False if you do not want to see a preview
 
 // Setting the default signature
 $mooSig->addSettingSetTemplate("ividoSignature.html");
 // All users from gsuite
 $mooSig->addSettingGetUsersFromGsuite(True);
 
-// For testing purposes. Comment to change all users
-$mooSig->addSettingFilterEmailsToUpdate(["$admin_email"]);
+// For testing purposes. Comment the line to change all users
+ $mooSig->addSettingFilterEmailsToUpdate(["$admin_email"]);
 
 $mooSig->updateSignatures();
