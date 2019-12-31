@@ -2,3 +2,4 @@ vendor/*
 local_vars/service-account.json
 composer.lock
 .idea/*
+composer.phar
