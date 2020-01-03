@@ -25,6 +25,6 @@ $mooSig->addSettingSetTemplate("ividoSignature.html");
 //$mooSig->addSettingGetUsersFromGsuite(True);
 
 // For testing purposes. Comment the line to change all users
-$mooSig->addSettingFilterEmailsToUpdate(["$admin_email"]);
+// $mooSig->addSettingFilterEmailsToUpdate(["$admin_email"]);
 
 $mooSig->updateSignatures();
